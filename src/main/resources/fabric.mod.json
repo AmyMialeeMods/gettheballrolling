@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "gettheballrolling",
+  "version": "${version}",
+
+  "name": "Get The Ball Rolling",
+  "description": "Let the Sulphur Cubes roll around!",
+  "authors": [
+    "AmyMialee"
+  ],
+  "contact": {
+    "homepage": "https://amymialee.dev/",
+    "sources": "https://github.com/AmyMialeeMods/gettheballrolling",
+    "issues": "https://github.com/AmyMialeeMods/gettheballrolling/issues"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/gettheballrolling/icon.png",
+
+  "environment": "client",
+  "mixins": [
+    "gettheballrolling.mixins.json"
+  ],
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.website": "https://amymialee.dev",
+        "modmenu.patreon": "https://www.patreon.com/cw/AmyMialee",
+        "modmenu.discord": "https://discord.gg/aEghXGbm3J"
+      }
+    }
+  }
+}

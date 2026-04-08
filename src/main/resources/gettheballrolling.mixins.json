@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.amymialee.gettheballrolling.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "AbstractCubeMobMixin",
+    "SulfurCubeMixin"
+  ],
+  "client": [
+    "SulfurCubeRendererMixin",
+    "SulfurCubeRenderStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
