@@ -36,11 +36,6 @@ public abstract class SulfurCubeMixin extends AbstractCubeMobMixin implements Qu
     }
 
     @Override
-    public Quaternionf gettheballrolling$getRotation(float delta) {
-        return this.prevRotation.nlerp(this.rotation, delta);
-    }
-
-    @Override
     public void gettheballrolling$setRotation(Quaternionf rotation) {
         this.rotation.set(rotation);
     }

@@ -14,7 +14,7 @@
     "issues": "https://github.com/AmyMialeeMods/gettheballrolling/issues"
   },
   "license": "All-Rights-Reserved",
-  "icon": "assets/gettheballrolling/icon.png",
+  "icon": "assets/gettheballrolling/icon.gif",
 
   "environment": "client",
   "mixins": [

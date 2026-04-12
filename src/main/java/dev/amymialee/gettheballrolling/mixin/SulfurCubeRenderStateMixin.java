@@ -17,6 +17,6 @@ public class SulfurCubeRenderStateMixin implements QuatfRotatableState {
 
     @Override
     public void gettheballrolling$setRotation(Quaternionf rotation) {
-        this.rotation = rotation;
+        this.rotation.set(rotation);
     }
 }
