@@ -11,7 +11,7 @@ public interface QuatfRotatableState {
 
     default void rotate(@NonNull SulfurCubeRenderState state, @NonNull PoseStack poseStack) {
         poseStack.translate(0, -state.boundingBoxHeight / 2, 0);
-        poseStack.mulPose(this.gettheballrolling$getRotation());
+        poseStack.rotate(this.gettheballrolling$getRotation());
         poseStack.translate(0, state.boundingBoxHeight / 2, 0);
     }
 }

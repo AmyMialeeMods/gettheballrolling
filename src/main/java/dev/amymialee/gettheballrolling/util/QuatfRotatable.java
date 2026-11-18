@@ -11,9 +11,7 @@ public interface QuatfRotatable {
     void gettheballrolling$setIdleTime(int idleTime);
     Quaternionf gettheballrolling$getRotation();
     Quaternionf gettheballrolling$getPrevRotation();
-    void gettheballrolling$setRotation(Quaternionf rotation);
-    void gettheballrolling$setPrevRotation(Quaternionf rotation);
-
+    
     static void tickQuat(SulfurCube cube) {
         if (!(cube instanceof QuatfRotatable quat)) return;
         quat.gettheballrolling$getPrevRotation().set(quat.gettheballrolling$getRotation());
@@ -37,6 +35,8 @@ public interface QuatfRotatable {
     }
 
     default Quaternionf gettheballrolling$getRotation(float delta) {
+//        if (Minecraft.getInstance().player.getMainHandItem().is(Items.IRON_SWORD)) return new Quaternionf();
+//        if (true) return new Quaternionf();
         var temp = new Quaternionf().set(this.gettheballrolling$getPrevRotation());
         return temp.nlerp(this.gettheballrolling$getRotation(), delta);
     }
